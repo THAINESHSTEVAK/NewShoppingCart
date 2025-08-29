@@ -1,0 +1,232 @@
+[
+{
+    "filter_id":1,
+    "products":[{
+                     "product_id":10,
+                     "product_name":"Grinder",
+                     "imgSrc":"images/homeappliance1.webp",
+                     "price":10000
+                 },
+                 {
+                    "product_id":11,
+                    "product_name":"Fridge",
+                    "imgSrc":"images/homeappliance.jpg",
+                    "price":20000
+                    
+                 },
+                 {
+                    "product_id":12,
+                    "product_name":"washing Machine",
+                    "imgSrc":"images/home_appliance.jpg",
+                    "price":15000
+                    
+                 },
+                 {
+                    "product_id":13,
+                    "product_name":"Tv",
+                    "imgSrc":"images/homeappliance2.jpg",
+                    "price":30000
+                    
+                 },
+                 {
+                    "product_id":14,
+                    "product_name":"AirConditioner",
+                    "imgSrc":"images/homeappliance4.webp",
+                    "price":10000
+                    
+                 },
+                 {
+                    "product_id":15,
+                    "product_name":"Table Fan",
+                    "imgSrc":"images/TableFan.webp",
+                    "price":10000
+                    
+                 }
+
+                ]
+},
+{
+    "filter_id":2,
+    "products":[{
+                     "product_id":20,
+                     "product_name":"Mens Wear",
+                     "imgSrc":"images/Menshoes.webp",
+                     "price":1000
+                 },
+                 {
+                    "product_id":21,
+                    "product_name":"Mens Watch",
+                    "imgSrc":"images/Menwatch.jpg",
+                    "price":500
+                    
+                 },
+                 {
+                    "product_id":22,
+                    "product_name":"Menswear",
+                    "imgSrc":"images/MensWear.webp",
+                    "price":1500
+                    
+                 },
+                 {
+                    "product_id":23,
+                    "product_name":"Menwear1",
+                    "imgSrc":"images/MensWear1.jpeg",
+                    "price":900
+                    
+                 },
+                 {
+                    "product_id":24,
+                    "product_name":"Mens Tshirt",
+                    "imgSrc":"images/MensTshirt.webp",
+                    "price":300
+                    
+                 },
+                 {
+                    "product_id":25,
+                    "product_name":"Mens Tshirt1",
+                    "imgSrc":"images/MensTshirt1.webp",
+                    "price":800
+                    
+                 }
+
+                ]
+},
+{
+    "filter_id":3,
+    "products":[{
+                     "product_id":30,
+                     "product_name":"womens Wear",
+                     "imgSrc":"images/womenswear.webp",
+                     "price":1000
+                 },
+                 {
+                    "product_id":31,
+                    "product_name":"Womens Watch",
+                    "imgSrc":"images/womenswatch.jpg",
+                    "price":500
+                    
+                 },
+                 {
+                    "product_id":32,
+                    "product_name":"Men saree",
+                    "imgSrc":"images/womenSaree.jpg",
+                    "price":4000
+                    
+                 },
+                 {
+                    "product_id":33,
+                    "product_name":"Womens Bag",
+                    "imgSrc":"images/womenBag.jpg",
+                    "price":1100
+                    
+                 },
+                 {
+                    "product_id":34,
+                    "product_name":"Womens Accessories",
+                    "imgSrc":"images/womensAccessories.avif",
+                    "price":1300
+                    
+                 },
+                 {
+                    "product_id":35,
+                    "product_name":"Women Shoes",
+                    "imgSrc":"images/womenshoes.jpg",
+                    "price":1250
+                    
+                 }
+
+                ]
+},
+{
+    "filter_id":4,
+    "products":[{
+                     "product_id":40,
+                     "product_name":"Story Book",
+                     "imgSrc":"images/BookStory.jpg",
+                     "price":500
+                 },
+                 {
+                    "product_id":41,
+                    "product_name":"English Book",
+                    "imgSrc":"images/bookEnglish.jpg",
+                    "price":950
+                    
+                 },
+                 {
+                    "product_id":42,
+                    "product_name":"Java Book",
+                    "imgSrc":"images/bookJava.jpg",
+                    "price":650
+                    
+                 },
+                 {
+                    "product_id":43,
+                    "product_name":"Philosophy Book",
+                    "imgSrc":"images/bookPhilosophy.jpg",
+                    "price":750
+                    
+                 },
+                 {
+                    "product_id":44,
+                    "product_name":"Poetry Book",
+                    "imgSrc":"images/bookPoetry.jpg",
+                    "price":300
+                    
+                 },
+                 {
+                    "product_id":45,
+                    "product_name":"Maths Book",
+                    "imgSrc":"images/bookMath.webp",
+                    "price":800
+                    
+                 }
+
+                ]
+},
+{
+    "filter_id":5,
+    "products":[{
+                     "product_id":50,
+                     "product_name":"Biriyani",
+                     "imgSrc":"/images/biriyani.jpg",
+                     "price":100
+                 },
+                 {
+                    "product_id":51,
+                    "product_name":"Burger",
+                    "imgSrc":"/images/burger.jpg",
+                    "price":80
+                    
+                 },
+                 {
+                    "product_id":32,
+                    "product_name":"Shawarma",
+                    "imgSrc":"/images/Shawarma.webp",
+                    "price":120
+                    
+                 },
+                 {
+                    "product_id":53,
+                    "product_name":"Pizza",
+                    "imgSrc":"/images/pizza.jpg",
+                    "price":250
+                    
+                 },
+                 {
+                    "product_id":54,
+                    "product_name":"Prawn",
+                    "imgSrc":"/images/prawn.webp",
+                    "price":200
+                    
+                 },
+                 {
+                    "product_id":55,
+                    "product_name":"Mutton",
+                    "imgSrc":"/images/muttonChukka.webp",
+                    "price":150
+                    
+                 }
+
+                ]
+}
+]

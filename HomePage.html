@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>   
+    
+
+    <link rel="icon" type="image/x-icon" href="D:/Front_End_Project/images/homepage_logo.webp">
+    
+    
+    <!-- css file-->
+    <link rel="stylesheet" href="css/HomePage.css">
+    
+    <title>Amazon</title>
+
+</head>
+
+<body>
+    
+
+    <header>
+
+         <div id="logo">
+            <img src="images/shopLogo.png" alt="Truck">
+        </div>
+        <div id="head"><h>Online Shopping</h></div>
+        
+
+        <div id="Truck">
+            <img src="images/Truck1.webp" alt="Truck">
+        </div>
+        <div id="Bike">
+            <img src="images/Bike.png" alt="Bike">
+        </div>
+
+    </header>
+    <nav id="navbar" class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+           
+
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="HomePage.html">My Web Page</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" role="button" onclick="displayItems(1)">Home Appliences</a>
+                </li>
+               <li class="nav-item custom-dropdown">
+                    <a class="nav-link" href="#">Clothing</a>
+                    <div class="custom-dropdown-menu">
+                        <a class="dropdown-item" href="#" onclick="displayItems(2)">MensWear</a>
+                        <a class="dropdown-item" href="#" onclick="displayItems(3)">WomensWear</a>
+                    </div>
+                </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link" href="#" role="button" onclick="displayItems(5)">Food</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#" role="button" onclick="displayItems(4)">Books</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="myRow">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+               
+                <img src="images/food.jpg" alt="Food">
+                <img src="images/biriyani.jpg" alt="Food"><br>
+                <img src="images/prawn.webp" alt="Food">
+                <img src="images/pizza.jpg" alt="Food">
+                
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/MensWear.webp" alt="Mens Wear">
+                <img src="images/Menwatch.jpg" alt="Mens Wear">
+                <img src="images/Menshoes.webp" alt="Mens Wear">
+                <img src="images/MensWear.webp" alt="Mens Wear">
+            </div>
+            <div class="carousel-item">
+                <img src="images/womenswear.webp" alt="womenswear">
+                <img src="images/womensAccessories.avif" alt="womenswear">
+                <img src="images/womenswatch.jpg" alt="womenswear">
+                 <img src="images/womenSaree.jpg" alt="womenswear">
+
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/books.jpg" alt="book">
+                <img src="images/bookEnglish.jpg" alt="book">
+                <img src="images/bookJava.jpg" alt="book">
+                <img src="images/bookStory.jpg" alt="book">
+            </div>
+            <div class="carousel-item">
+                <img src="images/home_appliance.jpg" alt="home appliance">
+                <img src="images/homeappliance4.webp" alt="home appliance">
+                <img src="images/homeappliance3.jpg" alt="home appliance">
+                <img src="images/homeappliance2.jpg" alt="home appliance">
+            </div>
+        </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <i class="bi bi-caret-left-fill" style="font-size:30px; color:black"></i>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <i class="bi bi-caret-right-fill" style="font-size:30px; color:black"></i>
+            </a>
+
+        
+
+    </div>
+    </div>
+    <div id="flexOutput"></div>
+    <div id="finalBill"></div>
+
+    <script src="javascript/HomePage.js"></script>
+    
+     
+    
+    
+    
+
+    
+   
+</body>
+</html>
