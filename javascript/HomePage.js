@@ -48,51 +48,77 @@ fetch("Data/myProducts.json").then((response)=>
 
 						document.querySelectorAll(".myRow")[0].innerHTML=productHTML
 
-						var x=window.matchMedia("(max-width:400px)")
+						var x=window.matchMedia("(min-width:960px)")
 
 						myMediaOutput(x)
 						
 						function myMediaOutput(x)
 						{
+							let myBlocks=document.querySelectorAll(".myRow div")
+							for(let i=0;i<myBlocks.length;i++)
+										{
+											myBlocks[i].style.marginLeft="0px"
+										}
                             if(x.matches)
 							{
-								document.querySelectorAll(".myRow")[0].style.height="1880px"
+								alert("960")
+								document.getElementsByClassName("myRow")[0].style.height="670px"
+								
+								document.getElementsByClassName("myRow")[0].style.width="96%"
+								
+								
 							}
 							else
 							{
-								x=window.matchMedia("(max-width: 700px)")
+								let mq700=window.matchMedia("(min-width: 700px)")
 
-								if(x.matches)
+								if(mq700.matches)
 								{
-									document.querySelectorAll(".myRow")[0].style.height="960"
+									alert("700")
+									document.getElementsByClassName("myRow")[0].style.height="1050px"
+								
+									for(let i=0;i<myBlocks.length;i++)
+									{
+										myBlocks[i].style.marginLeft="40px"
+									}
+
+									
 								}
 								else
 								{
-									x=window.matchMedia("(max-width:940px")
+									alert("400")
+									let mq400=window.matchMedia("(min-width:400px)")
 
-									if(x.matches)
+									if(mq400.matches)
 									{
-										document.querySelectorAll(".myRow")[0].style.height="630px"
+										document.getElementsByClassName("myRow")[0].style.height="1980px"
+										document.getElementsByClassName("myRow")[0].style.width="350px"
+									
+										
+									}
+									else
+									{
+ 
+							         	document.getElementsByClassName("myRow")[0].style.height = "650px";
 									}
 								}
 							}
 						}
                         
-						x.addEventListener("change",function(){
-							myMediaOutput(x)
-						})
+					
                             
+								document.querySelectorAll(".myRow")[0].innerHTML=productHTML
+										document.querySelectorAll(".myRow")[0].style.display="flex"
+										document.querySelectorAll(".myRow")[0].style.flexDirection="row"
+										document.querySelectorAll(".myRow")[0].style.justifyContent="space-between"
+										document.querySelectorAll(".myRow")[0].style.alignContent="space-around"
+										document.querySelectorAll(".myRow")[0].style.flexWrap="wrap"
+										document.querySelectorAll(".myRow")[0].style.padding="20px"
+										document.querySelectorAll(".myRow")[0].style.paddingTop="0px"
+										
+										document.querySelectorAll(".myRow")[0].style.boxsizing="border-box"
                         
-                        document.querySelectorAll(".myRow")[0].innerHTML=productHTML
-                        document.querySelectorAll(".myRow")[0].style.display="flex"
-                        document.querySelectorAll(".myRow")[0].style.flexDirection="row"
-                        document.querySelectorAll(".myRow")[0].style.justifyContent="space-between"
-                        document.querySelectorAll(".myRow")[0].style.alignContent="space-around"
-                        document.querySelectorAll(".myRow")[0].style.flexWrap="wrap"
-                        document.querySelectorAll(".myRow")[0].style.padding="20px"
-                        document.querySelectorAll(".myRow")[0].style.paddingTop="0px"
-                        document.querySelectorAll(".myRow")[0].style.height="630px"
-                        document.querySelectorAll(".myRow")[0].style.boxsizing="border-box"
+                        
 						
 
 
@@ -112,13 +138,14 @@ fetch("Data/myProducts.json").then((response)=>
                             if(!(String(myBlocks[i].innerHTML)==="undefined")&&!(String(myBlocks[i].innerHTML)===""))
                             {
                             
-                            myBlocks[i].style.width="32%"
-                            myBlocks[i].style.height="290px"
+                            myBlocks[i].style.width="320px"
+                            myBlocks[i].style.height="320px"
                             myBlocks[i].style.textAlign="center"
                             myBlocks[i].style.borderRadius="3%"
                             myBlocks[i].style.boxShadow="4px 4px 5px 2px gray"
                             myBlocks[i].style.marginTop="10px"
                             myBlocks[i].style.backgroundColor="white"
+							
 							
 
                             }						
@@ -165,7 +192,7 @@ fetch("Data/myProducts.json").then((response)=>
                             if(!(String(myCartButton[j].innerHTML)==="undefined")&&(typeof(myCartButton[j])==="object"))
                                 {
                                 myCartButton[j].style.float="right"	
-                                myCartButton[j].style.margin="auto 10px auto auto"
+                                myCartButton[j].style.margin="auto 8px auto auto"
 								myCartButton[j].style.border="none"
 								myCartButton[j].style.backgroundColor="green"
 								myCartButton[j].style.color="white"
@@ -173,6 +200,9 @@ fetch("Data/myProducts.json").then((response)=>
                                 
                                 }
                         }
+							x.addEventListener("change",function(){
+							myMediaOutput(x)
+						})
                 }
             }
         })
@@ -566,6 +596,13 @@ function checkOut()
                     <div id="bankInfo" class="bg-info" ></div>`
 	 document.getElementById("finalBill").style.display="block"
 	 document.getElementById("finalBill").innerHTML=billDiv
+
+	 let mq400=window.matchMedia("(min-width:400px)")
+	 if(mq400.matches)
+	 {
+		document.getElementById("flexContainer").style.display="none"
+	 }
+
 	}
 
 
@@ -573,13 +610,15 @@ function checkOut()
 	{
 		document.getElementById("finalBill").innerHTML=""
 		document.getElementById("finalBill").style.display="none"
+		document.getElementById("flexContainer").style.display="block"
+		
 	}
 	function proceedPayment(total)
 	{
 		let cardDiv=`<img src="images/visa.svg" style="width: 50px; height: 50px; object fit: cover;margin-left: 10px;"><img src="images/mastercard.png" style="margin-left: 10px; width: 40px; height: 30px; object fit: cover"><img src="images/amex.png" style="margin-left: 10px; width: 40px; height: 50px; object fit: cover"><img  src="images/discover.svg" style=" margin-left: 10px; width: 50px; height: 50px; object fit: cover">`
 		cardDiv+=`<h4 style="margin: 10px auto auto auto; text-align: center;">Amount Payable:₹${total}</h4>`
 
-		cardDiv+=`<div style="width: 510px; margin: auto;"><div style="float: left; margin: 10px auto auto auto;"><label>Card Number:</label><input type="text" style="width: 50px; text-align: center;" maxlength="4">-<input type="text" style="width: 50px; text-align: center;" maxlength="4">-<input type="text" style="width:50px; text-align: center;" maxlength="4">-<input type="text" style="width:50px; text-align: center;" maxlength="4"> </div>`
+		cardDiv+=`<div style="width: auto; margin: auto;"><div style="float: left; margin: 10px auto auto auto;"><label>Card Number:</label><input type="text" style="width: 50px; text-align: center;" maxlength="4">-<input type="text" style="width: 50px; text-align: center;" maxlength="4">-<input type="text" style="width:50px; text-align: center;" maxlength="4">-<input type="text" style="width:50px; text-align: center;" maxlength="4"> </div>`
 		cardDiv+=`<div style="margin:10px 10px auto auto; float: right;">CVV/CVV2:<input type="password" style="appearance:none; padding-left: 15px; width: 70px;background-image:url('images/lock-fill.svg');background-size:15px auto; background-position:1px 5px; background-repeat: no-repeat;" maxlength="3"></div>`
 		cardDiv+=`<div style="margin: 10px auto auto 27px; clear: left;"><label>Valid thru:</label><input type="text" style="width: 40px;text-align:center; margin-top: 10px;" maxlength="2">/<input type="text" style="width: 40px; text-align: center; margin-top: 10px;" maxlength="2"></div><hr style="margin: 0px padding: 0px;"></div>`
 		cardDiv+=`<button class="btn btn-success" onclick="paymentSuccessfull()" style="float: right; margin-right:15px;">Confirm Payment</button></div>`
@@ -588,3 +627,6 @@ function checkOut()
 		$("#bankInfo").slideDown(5000)
 	}
 
+
+
+	
